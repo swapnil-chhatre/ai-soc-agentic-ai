@@ -1,0 +1,70 @@
+job_description: >
+  "This is a full-time role for a Generative AI Engineer at Enterprise AI Group. As a Generative AI Engineer, 
+  you will have an eagerness to stay on the bleeding edge of AI technologies and services, 
+  continuously learning and applying new skills, and willing to continuously be on a steep learning curve. 
+  You will be responsible for developing and implementing :
+  Azure AI Search
+  Azure Copilot integration
+  Azure Cognitive services and Azure Open AI services
+  Azure Datalake services
+  While integrating with Dynamics 365 and other partners APIs
+  Azure security and tokens in a customised multi-tenant environment
+  Knowledge of scripting environments and use of BICEP files"
+
+resume: >
+  ""
+    John Doe
+    123 Main St
+    Anytown, CA 12345
+    john.doe@example.com
+    555-123-4567
+
+    Summary
+    Highly skilled Software Engineer with 5+ years of experience in designing, developing,
+    and implementing software solutions.  Proven ability to work independently and as part of a team.  
+    Experience in machine learning and AI.
+
+    Experience
+    Software Engineer, ABC Company, Anytown, CA (2018 - Present)
+    - Designed, developed, and implemented software solutions for various projects.
+    - Worked with machine learning and AI technologies.
+    - Collaborated with cross-functional teams to deliver high-quality products.
+
+    Education
+    MS in Computer Science, XYZ University, Anytown, CA
+    BS in Computer Science, XYZ University, Anytown, CA
+
+    Skills
+    Python, Java, C++, Machine Learning, AI, Software Development, Agile
+  ""
+
+cover_letter: >
+  ""
+    Dear Hiring Manager,
+
+    I am writing to express my enthusiastic interest in the Software Engineer - AI position at your company. 
+    My background in software engineering, with a strong emphasis on machine learning and AI, aligns perfectly with the requirements outlined 
+    in the job description.
+
+    As you can see from my resume, I have over five years of experience in designing, developing, and implementing software solutions. 
+    In my previous role at ABC Company, I was deeply involved in working with machine learning technologies, contributing to the development and deployment 
+    of several successful projects. I have a proven ability to work both independently and collaboratively within cross-functional teams to 
+    deliver high-quality products.
+
+    My skills in Python, Java, and C++, combined with my experience in machine learning and AI, 
+    make me confident in my ability to contribute to your team. I am particularly excited about the opportunity to apply my expertise 
+    to the challenges and opportunities in this role.
+
+    I am eager to learn more about the Software Engineer - AI position and discuss how my skills and experience can benefit your organization. 
+    Thank you for your time and consideration.
+
+    Sincerely,
+
+    John Doe
+  ""
+
+hiring_manager_email: >
+  "hiringmanager@xyz.com"
+
+job_title: >
+  "Software Engineer (AI)"

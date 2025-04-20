@@ -1,0 +1,49 @@
+job_search_task:
+  description: >
+    Search for job openings that match the given title {job_title}. 
+    Provide a list of job descriptions and application links.
+  expected_output: >
+    A list with 10 bullet points of the most relevant job searches and emails of hiring managers.
+  agent: job_search_agent
+
+resume_tailor_task:
+  description: >
+    Tailor the candidate's resume to highlight the skills and experience most relevant to a specific job description.
+    The job description is: {job_description}.
+    The resume to tailor is: {resume}
+  expected_output: >
+    A fully resume with all main sections tailored to match the job description.
+    Formatted as markdown without '```'
+  agent: resume_tailor_agent
+
+cover_letter_writer_task:
+  description: >
+    Write a compelling cover letter for a specific job, emphasizing the candidate's qualifications and interest in the position. 
+    The job description is: {job_description}. 
+    The resume is: {resume}
+  expected_output: >
+    A complete cover letter highlighting the candidate's qualities and interests.
+    Formatted as markdown without '```'
+  agent: cover_letter_writer_agent
+
+application_task:
+  description: >
+    Write a draft email to the hiring manager which summarizes candidate's qualifications and interest in the job role.
+    The email draft should contain PDFs or resume and cover letter.
+    Hiring manager's email: {hiring_manager_email}.
+    Use the following information: {resume} and {cover_letter}
+  expected_output: >
+    A draft email to the hiring manager with all the information with attached resume and cover letter.
+    Formatted as markdown without '```'
+  agent: application_agent
+
+interview_prep_task:
+  description: >
+    Prepare the candidate for the interview by providing potential questions, conducting mock interviews, and giving feedback.
+    The job description is: {job_description}.
+    The resume is: {resume}
+  expected_output: >
+    A list of interview questions.
+    Formatted as markdown without '```'
+  agent: interview_prep_agent
+
