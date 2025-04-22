@@ -1,5 +1,6 @@
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
+from job_search_automation.tools.custom_tool import read_from_markdown, save_to_markdown
 
 @CrewBase
 class JobSearchAutomation():
@@ -12,6 +13,7 @@ class JobSearchAutomation():
     def job_search_agent(self) -> Agent:
         return Agent(
             config=self.agents_config['job_search_agent'],
+            tools=[save_to_markdown],
             verbose=True
         )
 
@@ -19,6 +21,7 @@ class JobSearchAutomation():
     def resume_tailor_agent(self) -> Agent:
         return Agent(
             config=self.agents_config['resume_tailor_agent'],
+            tools=[read_from_markdown, save_to_markdown],
             verbose=True
         )
 
@@ -26,27 +29,22 @@ class JobSearchAutomation():
     def cover_letter_writer_agent(self) -> Agent:
         return Agent(
             config=self.agents_config['cover_letter_writer_agent'],
-            verbose=True
-        )
-
-    @agent
-    def application_agent(self) -> Agent:
-        return Agent(
-            config=self.agents_config['application_agent'],
+            tools=[read_from_markdown, save_to_markdown],
             verbose=True
         )
 
     @agent
     def interview_prep_agent(self) -> Agent:
         return Agent(
-            config=self.agents_config['resume_tailor_agent'],
+            config=self.agents_config['interview_prep_agent'],
+            tools=[read_from_markdown, save_to_markdown],
             verbose=True
         )
 
     @task
     def job_search_task(self) -> Task:
         return Task(
-            config=self.tasks_config['job_search_task'],
+            config=self.tasks_config['job_search_task']
         )
 
     @task
@@ -60,12 +58,6 @@ class JobSearchAutomation():
     def cover_letter_writer_task(self) -> Task:
         return Task(
             config=self.tasks_config['cover_letter_writer_task'],
-        )
-
-    @task
-    def application_task(self) -> Task:
-        return Task(
-            config=self.tasks_config['application_task'],
         )
 
     @task

@@ -22,11 +22,14 @@ def run():
     Run the crew.
     """
     inputs={
-        "job_description": input_config['job_description'],
+        "job_title": input_config['job_title'],
+        "outputs_path": "/home/user/ai-soc-workshop/job_search_automation/outputs/",
+        "jobs_filename": "jobs.md",
         "resume": input_config['resume'],
+        "resumes_path": "/home/user/ai-soc-workshop/job_search_automation/outputs/resumes/",
+        "cover_letters_path": "/home/user/ai-soc-workshop/job_search_automation/outputs/cover_letters/",
         "cover_letter": input_config['cover_letter'],
-        "hiring_manager_email": input_config['hiring_manager_email'],
-        "job_title": input_config['job_title']
+        "interview_questions_path" : "/home/user/ai-soc-workshop/job_search_automation/outputs/interview_questions/"
     }
     
     try:

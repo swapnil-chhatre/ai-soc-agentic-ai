@@ -1,16 +1,3 @@
-job_description: >
-  "This is a full-time role for a Generative AI Engineer at Enterprise AI Group. As a Generative AI Engineer, 
-  you will have an eagerness to stay on the bleeding edge of AI technologies and services, 
-  continuously learning and applying new skills, and willing to continuously be on a steep learning curve. 
-  You will be responsible for developing and implementing :
-  Azure AI Search
-  Azure Copilot integration
-  Azure Cognitive services and Azure Open AI services
-  Azure Datalake services
-  While integrating with Dynamics 365 and other partners APIs
-  Azure security and tokens in a customised multi-tenant environment
-  Knowledge of scripting environments and use of BICEP files"
-
 resume: >
   ""
     John Doe
@@ -62,9 +49,6 @@ cover_letter: >
 
     John Doe
   ""
-
-hiring_manager_email: >
-  "hiringmanager@xyz.com"
 
 job_title: >
   "Software Engineer (AI)"
